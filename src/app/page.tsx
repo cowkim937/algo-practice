@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Hello from './components/hello';
 
 export default function Home() {
   return (
@@ -6,6 +7,8 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <p className="text-7xl font-serif font-bold text-sky-700">Hello, World!</p>
         <p className="text-2xl text-justify text-center">DDDDDD<br/>AAAAAA</p>
+
+        <Hello name="World!"/>
 
         <Link href={"/Info"}>About</Link>
       </main>
